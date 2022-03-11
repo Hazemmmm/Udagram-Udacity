@@ -1,2 +1,0 @@
-
-postgres://postgres:postgres@database-1.c2deshkx6ptb.us-east-1.rds.amazonaws.com:5432/postgres
