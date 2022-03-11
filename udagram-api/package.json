@@ -9,7 +9,7 @@
     "dev": "ts-node-dev --respawn --transpile-only ./src/server.ts",
     "prod": "tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
-    "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
+    "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && 7z.exe a -tzip Archive.zip && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -29,7 +29,8 @@
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",
     "sequelize": "^5.21.4",
-    "sequelize-typescript": "^0.6.9"
+    "sequelize-typescript": "^0.6.9",
+    "zip": "^1.2.0"
   },
   "devDependencies": {
     "@types/bluebird": "^3.5.26",
