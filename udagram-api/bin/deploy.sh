@@ -1,4 +1,4 @@
 cd ./www
-eb init $EB_APP --region $AWS_REGION --platform node.js
-eb use $EB_ENV
+eb init udagram --region us-east-1 --platform node.js
+eb use Udagarm-env
 eb deploy
