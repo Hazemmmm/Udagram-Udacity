@@ -15,6 +15,8 @@ export class ApiService {
 
   token: string;
 
+
+  
   constructor(private http: HttpClient) {
   }
 
