@@ -18,19 +18,19 @@ The project can run but is missing some information to connect to the database a
    -- src
    -- .env
 3- This .env file must contain the following keys:
-POSTGRES_HOST= **********
-PORT=********
-POSTGRES_USERNAME=********
-POSTGRES_PASSWORD=********
-POSTGRES_DB=********
-DB_PORT=********
-RDS_DIALECT=********
-AWS_REGION=********
-URL=********
-JWT_SECRET=********
-EB_APP=********
-EB_ENV=********
-AWS_BUCKET=********
+   - POSTGRES_HOST= **********
+   - PORT=********
+   - POSTGRES_USERNAME=********
+   - POSTGRES_PASSWORD=********
+   - POSTGRES_DB=********
+   - DB_PORT=********
+   - RDS_DIALECT=********
+   - AWS_REGION=********
+   - URL=********
+   - JWT_SECRET=********
+   - EB_APP=********
+   - EB_ENV=********
+   - AWS_BUCKET=********
 
 4- Run this script first `npm install` for both front & back end folders.
 5- Run the server and the client side using `npm run start`
