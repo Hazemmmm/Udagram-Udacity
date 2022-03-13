@@ -11,6 +11,73 @@ This application is provided to you as an alternative starter project if you do 
 
 The project can run but is missing some information to connect to the database and storage service. These will be setup during the course of the project
 
+### Steps for Running Project Locally:
+1- Upload that code after clonning to your github repo.
+2- Add .env file in root folder 
+ -- udapgram-api 
+   -- src
+   -- .env
+3- This .env file must contain the following keys:
+POSTGRES_HOST= **********
+PORT=********
+POSTGRES_USERNAME=********
+POSTGRES_PASSWORD=********
+POSTGRES_DB=********
+DB_PORT=********
+RDS_DIALECT=********
+AWS_REGION=********
+URL=********
+JWT_SECRET=********
+EB_APP=********
+EB_ENV=********
+AWS_BUCKET=********
+
+4- Run this script first `npm install` for both front & back end folders.
+5- Run the server and the client side using `npm run start`
+backend should route to `localhost:${your port}` and Frontend should route to `localhost:4200`
+
+### In order to view your deployment on S3 [Front End Environment]
+
+    S3 Bucket: `my-bucket-udagram`
+    S3 URL: `http://my-bucket-udagram.s3-website-us-east-1.amazonaws.com/`
+
+![Alt text](https://github.com/Hazemmmm/Udagram-Udacity/blob/main/Docs/S3/Screenshot%202022-03-11%20172507.jpg "Frontend Environment")
+
+### In order to view your deployment on Elastic Beanstalk [Back End Environment]
+    Application Name: `udagram`  
+    Enviroment Name: `Udagram-env`
+    URL: `http://udagram-env.eba-jxzps8vm.us-east-1.elasticbeanstalk.com`
+
+![Alt text](https://github.com/Hazemmmm/Udagram-Udacity/blob/main/Docs/EB/Screenshot%202022-03-14%20010317.jpg "BackEnd Environment")
+
+### In order to view your deployment on RDS Database [Datbase Environment]
+
+    DB URL: `database-1.c2deshkx6ptb.us-east-1.rds.amazonaws.com`
+
+![Alt text](https://github.com/Hazemmmm/Udagram-Udacity/blob/main/Docs/RDS/RDS_DB.jpg "DB Environment")
+
+
+### Deployment Process In CircleCi:
+![Alt text](https://github.com/Hazemmmm/Udagram-Udacity/blob/main/Docs/CircleCi/Screenshot%202022-03-14%20011859.jpg "CircleCi Passed")
+
+
+### Explaining The App Structure Diagram:
+
+![Alt text](https://github.com/Hazemmmm/Udagram-Udacity/blob/main/Docs/Diagram/Screenshot%202022-03-14%20013026.jpg "App Structure Diagram")
+
+
+### Package.json SCRIPTS:
+
+      "backend:install": "cd udagram-api && npm install",
+      "frontend:install": "cd udagram-frontend && npm install",
+      "backend:build": "cd udagram-api && npm run build",
+      "frontend:build": "cd udagram-frontend && npm run build",
+      "backend:test": "cd udagram-api && npm run test",
+      "frontend:test": "cd udagram-frontend && npm run test",
+      "backend:deploy": "cd udagram-api && npm run deploy",
+      "frontend:deploy": "cd udagram-frontend && npm run deploy"
+
+
 ### Dependencies
 
 ```
