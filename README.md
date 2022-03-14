@@ -66,6 +66,8 @@ backend should route to `localhost:${your port}` and Frontend should route to `l
 ![Alt text](https://github.com/Hazemmmm/Udagram-Udacity/blob/main/Docs/Diagram/Screenshot%202022-03-14%20013026.jpg "App Structure Diagram")
 
 
+### Explaining The CircleCi PipeLine: 
+![Alt text](https://github.com/Hazemmmm/Udagram-Udacity/blob/main/Docs/Diagram/CircleCi%20.jpg "CircleCi PipeLine")
 ### Package.json SCRIPTS:
 
       "backend:install": "cd udagram-api && npm install",
