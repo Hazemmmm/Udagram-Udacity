@@ -1,3 +1,3 @@
-aws s3 cp --recursive --acl public-read ./www s3://$AWS_BUCKET/
-
-
+echo hello world from frontend1
+echo hello world from frontend2
+echo hello world from frontend3
