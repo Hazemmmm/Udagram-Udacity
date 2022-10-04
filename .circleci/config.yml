@@ -44,4 +44,4 @@ workflows:
         filter:
           branches:
             only:
-              - master
+              - main
