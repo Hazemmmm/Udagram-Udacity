@@ -8,9 +8,9 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint",
+    "lint": "ng lint --fix",
     "e2e": "ng e2e",
-    "deploy": "chmod +x bin/deploy.sh && bin/deploy.sh"
+    "deploy": "bash ./bin/deploy.sh"
   },
   "private": true,
   "dependencies": {
