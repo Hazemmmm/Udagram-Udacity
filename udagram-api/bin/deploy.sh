@@ -1,1 +1,1 @@
-echo hello world from $BACKEND_NAME
+echo hello world from backendApp

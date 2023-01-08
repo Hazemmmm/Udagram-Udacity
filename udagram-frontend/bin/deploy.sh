@@ -1,1 +1,1 @@
-echo hello world from $FRONTEND
+echo hello world from frontendApp

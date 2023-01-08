@@ -5,7 +5,7 @@ orbs:
   eb: circleci/aws-elastic-beanstalk@2.0.1
   aws-cli: circleci/aws-cli@3.1.1
 jobs:
-
+  
   build:
     docker:
       # the base image can run most needed actions with orbs
@@ -47,10 +47,15 @@ jobs:
       - aws-cli/setup
       - checkout
       - run:
-          name: Deploy App
+          name: Deploy Backend
           command: |
-            npm run app:deploy
+            npm run backend:deploy
                    
+      - run:
+          name: Deploy FrontEnd
+          command: |
+            npm run frontend:deploy
+
 workflows:
   udagram:
     jobs:
