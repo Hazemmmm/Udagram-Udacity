@@ -29,9 +29,13 @@ jobs:
           command: |
             npm run frontend:lint
       - run:
-          name: Front-End Build
+          name: Front-End Test
           command: |
-            npm run frontend:build
+            npm run frontend:test
+      - run:
+          name: Back-End Test
+          command: |
+            npm run backend:test
       - run:
           name: API Build
           command: |
@@ -49,8 +53,7 @@ jobs:
       - run:
           name: Deploy Backend
           command: |
-            npm run backend:deploy
-                   
+            npm run backend:deploy            
       - run:
           name: Deploy FrontEnd
           command: |

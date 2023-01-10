@@ -1,1 +1,1 @@
-echo hello world from $BUCKET_NAME $APP_NAME
+echo hello world from backEndApp
