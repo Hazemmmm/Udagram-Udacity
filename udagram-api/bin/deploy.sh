@@ -1,1 +1,1 @@
-echo hello world from $PORT
+echo this is PORT=$PORT TEST=$TEST
